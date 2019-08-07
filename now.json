@@ -1,0 +1,20 @@
+{
+    "name": "death-countdown",
+    "version":2,
+    "builds":[
+      {   "src": "*.js",
+          "use": "@now/node",
+          "config": {
+          "includeFiles": [
+            "features/**"
+          ]
+      } 
+      }
+    ],
+    "routes":[
+        {"src":"./bot.js", "dest":"server.js"}
+    ],
+    "github": {
+      "enabled": true
+    }
+  }
